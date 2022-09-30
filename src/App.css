@@ -1,0 +1,80 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameBoard {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.gameCell:nth-child(3n-1) {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.gameCell:nth-child(4),
+.gameCell:nth-child(5),
+.gameCell:nth-child(6) {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.gameCell {
+  height: 50px;
+  width: 70px;
+  border-radius: 0;
+  background: none;
+  
+}
+
+.gameCell:focus{
+  outline: none; 
+}
+
+.controlRow {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.read-the-docs {
+  color: #888;
+}
